@@ -1,0 +1,13 @@
+#!/bin/sh
+
+. $WM_PROJECT_DIR/bin/tools/RunFunctions
+
+application=`getApplication`
+
+cp -r 0.org 0 > /dev/null 2>&1
+[ ! -r disk.msh ] && runApplication gmsh -o disk.msh -3 disk.geo
+runApplication gmshToFoam disk.msh
+runApplication changeDictionary
+runApplication $application -writep
+runApplication sample
+runApplication ./plot-vtk.py postProcessing/surfaces/0/U_center-plane.vtk

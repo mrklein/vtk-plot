@@ -1,0 +1,30 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      changeDictionaryDict;
+}
+
+dictionaryReplacement
+{
+    boundary
+    {
+        walls
+        {
+            type            wall;
+        }
+
+        cylinder
+        {
+            type            wall;
+        }
+
+        front-n-back
+        {
+            type            empty;
+        }
+    }
+}
+
+// vim:set sw=4 ts=4 sts=4 et ft=openfoam:
