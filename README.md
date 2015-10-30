@@ -13,6 +13,3 @@ Allrun script:
    script.
 
 Allclean script removes results of Allrun.
-
-Case was created as a response to comment - <http://matveichev.blogspot.com/2014/03/plotting-vtk-files-with-matplotlib-and.html?showComment=1446136078228#c564942294285278208>
-
