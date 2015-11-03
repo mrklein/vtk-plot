@@ -9,7 +9,7 @@ Allrun script:
    front-n-back patch type to empty.
 4. Runs potentialFoam.
 5. Samples flow field with sample utility.
-6. Creates plots (U_center-plane.pdf & U_center-plane.pnd) using plot-vtk.py
+6. Creates plots (U_center-plane.pdf & U_center-plane.png) using plot-vtk.py
    script.
 
 Allclean script removes results of Allrun.
